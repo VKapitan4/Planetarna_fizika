@@ -44,7 +44,7 @@ p2.reset()
 p1.set_initial_conditions([0,0], [0, -(m_2/m_1)*v0_2])
 p2.set_initial_conditions([semi_major_axis + f, 0], [0, v0_2])
 
-numericki_period_2 = svemir.animate_plot(5000, 5*T, 1)
+numericki_period_2 = svemir.animate_plot(5000, 10*T, 1)
 
 if type(numericki_period_2)==str:
     print(f"Numericki period 2 : {numericki_period_2}")

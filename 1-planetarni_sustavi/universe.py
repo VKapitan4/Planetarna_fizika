@@ -82,6 +82,8 @@ class Universe:
         N = int(vrijeme/dt)
         for i in range(0,N):           # evolucija kroz cijelo zadano vrijeme
             self.__move()
+            self.planets[0]
+            print(1/2 * self.planets[1].m * (np.linalg.norm(self.planets[1].v[-1]))**2 - (1/(np.linalg.norm(self.planets[1].r[-1]))))
         numericki_period = 0
         i=1
         while i<len(self.planets[1].r) and not(self.planets[1].r[i-1][1]<0 and self.planets[1].r[i][1]>0):
